@@ -1,0 +1,104 @@
+/* ===== GLOBAL RESET ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== BODY ===== */
+body{
+  min-height:100vh;
+  background: linear-gradient(135deg,#141e30,#243b55);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.App{
+  width:90%;
+  max-width:1000px;
+  text-align:center;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-radius:15px;
+  padding:40px;
+  box-shadow:0 8px 30px rgba(0,0,0,0.4);
+}
+
+/* ===== TITLE ===== */
+.App h1{
+  color:#ffffff;
+  margin-bottom:30px;
+  font-size:32px;
+  letter-spacing:1px;
+}
+
+/* ===== INPUT FIELD ===== */
+input{
+  width:70%;
+  max-width:400px;
+  padding:12px 15px;
+  border:none;
+  outline:none;
+  border-radius:8px;
+  font-size:16px;
+  margin-right:10px;
+  background:#f1f1f1;
+}
+
+/* ===== BUTTON ===== */
+button{
+  padding:12px 20px;
+  border:none;
+  border-radius:8px;
+  background:#ff4b2b;
+  background: linear-gradient(45deg,#ff416c,#ff4b2b);
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.05);
+  box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ===== VIDEO GRID ===== */
+.videos{
+  margin-top:30px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:20px;
+  justify-content:center;
+}
+
+/* ===== IFRAME STYLE ===== */
+iframe{
+  width:100%;
+  height:200px;
+  border:none;
+  border-radius:10px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.5);
+  transition:0.3s;
+}
+
+iframe:hover{
+  transform:scale(1.03);
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:600px){
+
+  input{
+    width:100%;
+    margin-bottom:10px;
+  }
+
+  button{
+    width:100%;
+  }
+
+}
