@@ -9,7 +9,7 @@ function App() {
 
   const getVideos = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/mood", { text });
+      const res = await axios.post("https://youtube-recommendation-n4zm.onrender.com/mood", { text });
       setVideos(res.data);
     } catch (error) {
       console.error(error);
